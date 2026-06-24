@@ -1,0 +1,26 @@
+export type Voucher = {
+  id: string;
+  voucher_no: string;
+  status: 'draft' | 'issued' | 'cancelled';
+  issue_date: string;
+  guest_name: string;
+  guest_nationality?: string | null;
+  guest_phone?: string | null;
+  adults: number;
+  children: number;
+  hotel_name: string;
+  hotel_address?: string | null;
+  destination?: string | null;
+  check_in: string;
+  check_out: string;
+  nights: number;
+  room_type: string;
+  board_basis: string;
+  number_of_rooms: number;
+  supplier_name?: string | null;
+  supplier_confirmation_no?: string | null;
+  booking_reference?: string | null;
+  special_notes?: string | null;
+  internal_notes?: string | null;
+  created_at: string;
+};
